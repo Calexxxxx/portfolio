@@ -4,11 +4,13 @@ This project is part of the Udacity Google front-end developer NanoDegree Schola
 The goal is to build a fully responsive portfolio website.
 
 ### View project Live
+
 [Go to the live version](https://calexxxxx.github.io/portfolio/)
 
 ### Source Used
 
-The Images are bought on Shutterstock 
+The Images are bought on Shutterstock
 
-### Mockup 
-![Portfolio](https://github.com/Calexxxxx/portfolio/blob/master/design-mockup-portfolio.png "Portfolio Mockup")
+### Mockup
+
+![Portfolio](https://github.com/Calexxxxx/portfolio/blob/master/img/design-mockup-portfolio.png 'Portfolio Mockup')
