@@ -1,0 +1,27 @@
+.nav__inner {
+  grid-auto-rows: 60px auto auto auto auto;
+}
+
+.intro {
+  position: absolute;
+  top: 275px;
+  left: calc(50% - 183px);
+  text-align: center;
+  color: #fff;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px auto;
+  grid-column-gap: 1em;
+}
+
+.featured__title {
+  grid-column: span 3;
+}
+
+.featured__section {
+  margin-bottom: 0;
+  grid-template-columns: repeat(1, 1fr);
+}

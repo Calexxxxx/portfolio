@@ -1,0 +1,9 @@
+body {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.featured__section__content {
+  border-top: 1px solid #b1d440;
+  margin-top: 1.5em;
+}

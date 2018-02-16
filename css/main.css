@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Waiting+for+the+Sunrise');
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 100px 40px auto auto;
+  grid-row-gap: 2em;
+}
+
+body:first-child {
+  grid-row-gap: 0;
+}
+
+.btn {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #b1d440;
+  border-radius: 3px;
+  color: #b1d440;
+  text-align: center;
+}
+
+/* HEADER STYLES */
+/* 1 header
+ * 2 header__logo
+ * 3 header__text
+ * 4 header modifiers
+ */
+
+/* header */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 3;
+  padding: 1em;
+}
+
+/* header__logo */
+.header__logo {
+  grid-column: span 1;
+}
+
+.header__logo__image {
+  width: 80px;
+  height: 80px;
+}
+
+/* header__text */
+.header__text {
+  grid-column: span 2;
+  align-self: center;
+  text-align: end;
+}
+
+.header__text__title {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.header__text__subtitle {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* header modifiers */
+.header__text-thin {
+  font-weight: 200;
+}
+
+.header__text-thick {
+  font-weight: 500;
+}
+
+.header__text-all-uppercase {
+  text-transform: uppercase;
+}
+
+/* NAV STYLES */
+/* 1 nav
+ * 2 nav__icon
+ * 3 nav__inner
+ * 4 nav__item
+ */
+
+/* nav */
+.nav {
+  grid-column: span 3;
+}
+
+/* nav__icon */
+.nav__icon {
+  font-size: 1.8em;
+  width: 2.8em;
+  text-align: right;
+  cursor: e-resize;
+  margin-left: auto;
+  padding: 0 0.5em;
+  color: #b1d440;
+}
+
+.nav__icon-close {
+  font-size: 1.8em;
+  padding: 0.5em 0.5em 0.5em 0;
+  text-align: right;
+  color: #b1d440;
+  cursor: w-resize;
+}
+
+/* nav__inner */
+.nav__inner {
+  z-index: 2;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all 400ms ease-in-out;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 60px;
+}
+
+.nav__inner-show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* nav__item */
+.nav__item {
+  align-self: center;
+}
+
+.nav__item a {
+  display: block;
+  color: #b1d440;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* HERO STYLES */
+/* 1 hero
+ * 2 hero__img
+ */
+
+/* hero */
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+}
+
+/* hero__img */
+.hero__img {
+  width: 100%;
+}
+
+/* INTRO STYLES */
+/* 1 intro
+ * 2 intro__greet
+ * 3 intro__name
+ * 4 intro__desc
+ */
+
+/* intro */
+.intro {
+  padding: 1em;
+}
+
+/* intro__greet */
+.intro__greet {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 3em;
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* intro__name */
+.intro__name {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+/* intro__desc */
+.intro__desc {
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* FEATURED WORK STYLES */
+/* 1 featured
+ * 2 featured__title
+ * 3 featured__section
+ * 4 featured modifiers
+ */
+
+/* featured */
+.featured {
+  padding: 1em;
+}
+
+/* featured__title */
+.featured__title {
+  font-size: 1.3em;
+}
+
+/* featured__section */
+.featured__section {
+  display: grid;
+  margin-bottom: 3em;
+  border: 1px solid #b1d440;
+  border-radius: 3px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 3px 21px -6px 0px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 0px 3px 21px -6px rgba(168, 168, 168, 1);
+  box-shadow: 0px 3px 21px -6px rgba(168, 168, 168, 1);
+}
+
+.featured__section:last-child {
+  margin-bottom: 0;
+}
+
+.featured__section__content {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #b1d440;
+  margin-top: 1.5em;
+}
+
+.featured__section__image {
+  width: 100%;
+}
+
+.featured__section__title {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.featured__section__link {
+  text-decoration: none;
+}
+
+/* featured modifiers */
+.featured__title-green {
+  color: #b1d440;
+}
