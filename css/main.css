@@ -236,13 +236,14 @@ body:first-child {
 
 .featured__section__content {
   width: 100%;
-  height: auto;
+  min-height: 150px;
   border-top: 1px solid #b1d440;
   margin-top: 1.5em;
 }
 
 .featured__section__image {
   width: 100%;
+  min-height: 220px;
 }
 
 .featured__section__title {

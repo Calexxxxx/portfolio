@@ -31,14 +31,26 @@
 
 .featured__section {
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 50px;
+  grid-template-areas:
+    'i c'
+    '. l';
 }
 
 .featured__section__image {
   align-self: center;
+  grid-area: i;
 }
 
 .featured__section__content {
   border-top: none;
   padding: 1em;
   margin-top: 0;
+  grid-area: c;
+}
+
+.featured__section__link {
+  justify-self: center;
+  display: block;
+  grid-area: l;
 }
